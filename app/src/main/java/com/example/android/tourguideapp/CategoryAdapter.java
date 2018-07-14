@@ -30,7 +30,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             if (position == 0) {
                 return new DetailsFragment();
             } else {
-                return new DetailsFragment();
+                return new DetailsMapFragment();
             }
         }
     }
