@@ -25,7 +25,7 @@ public class FragmentTwo extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment, container, false);
 
         ArrayList<Place> place = new ArrayList<Place>();
-        place.add(new Place("name", "shortDescription","description", R.drawable.bielsko));
+        place.add(new Place(getString(R.string.sulkowski_castle), getString(R.string.sulkowski_castle_description), getString(R.string.sulkowski_castle_address), getString(R.string.sulkowski_castle_web), getString(R.string.sulkowski_castle_url), getString(R.string.sulkowski_castle_phone), getString(R.string.sulkowski_castle_latitude), getString(R.string.sulkowski_castle_longitude), R.drawable.bielsko));
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), place);
 
