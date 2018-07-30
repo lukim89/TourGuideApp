@@ -20,17 +20,17 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (mType == 1) {
             if (position == 0) {
-                return new FragmentOne();
+                return new FragmentTouristAttractions();
             } else if (position == 1) {
-                return new FragmentTwo();
+                return new FragmentGastronomy();
             } else {
-                return new FragmentThree();
+                return new FragmentHotels();
             }
         } else {
             if (position == 0) {
-                return new DetailsFragment();
+                return new FragmentDetails();
             } else {
-                return new DetailsMapFragment();
+                return new FragmentDetailsMap();
             }
         }
     }
@@ -46,11 +46,11 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         if (mType == 1) {
             if (position == 0) {
-                return mContext.getString(R.string.One);
+                return mContext.getString(R.string.TouristAttractions);
             } else if (position == 1) {
-                return mContext.getString(R.string.Two);
+                return mContext.getString(R.string.Gastronomy);
             } else {
-                return mContext.getString(R.string.Three);
+                return mContext.getString(R.string.Hotels);
             }
         } else {
             if (position == 0) {

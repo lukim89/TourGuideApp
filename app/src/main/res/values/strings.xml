@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">Tour Guide App</string>
 
-    <string name="One">one</string>
-    <string name="Two">two</string>
-    <string name="Three">three</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+    <string name="TouristAttractions">Tourist Attractions</string>
+    <string name="Gastronomy">Gastronomy</string>
+    <string name="Hotels">Hotels</string>
     <string name="Four">four</string>
     <string name="Details">details</string>
     <string name="Map">map</string>

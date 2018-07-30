@@ -42,12 +42,8 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
         int imageID = currentPlace.getImageResourceId();
 
         TextView oneTextView = listItemView.findViewById(R.id.title);
-        oneTextView.setTextSize(34);
+        oneTextView.setTextSize(20);
         oneTextView.setText(name);
-
-        TextView twoTextView = listItemView.findViewById(R.id.shortDescription);
-        twoTextView.setText(description);
-
 
         ImageView imageView = listItemView.findViewById(R.id.image);
         imageView.setImageResource(imageID);
