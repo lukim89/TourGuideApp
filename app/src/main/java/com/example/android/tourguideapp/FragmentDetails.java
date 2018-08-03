@@ -1,7 +1,10 @@
 package com.example.android.tourguideapp;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +24,8 @@ public class FragmentDetails extends Fragment {
         View rootView = inflater.inflate(R.layout.details, container, false);
 
         Bundle bundle = getActivity().getIntent().getExtras();
+
+        ((AppCompatActivity)getActivity()).getSupportActionBar().setTitle(bundle.getString("NAME"));
 
         TextView title = rootView.findViewById(R.id.details_title);
         title.setTextSize(20);

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tour Guide App</string>
+    <string name="app_name">Podbeskydí</string>
 
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
@@ -115,5 +115,8 @@
     <string name="zamek_pszczyna_description"></string>
     <string name="zamek_pszczyna_latitude">49.978172</string>
     <string name="zamek_pszczyna_longitude">18.940448</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
