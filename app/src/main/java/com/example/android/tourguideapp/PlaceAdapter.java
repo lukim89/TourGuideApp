@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,7 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         TextView oneTextView = listItemView.findViewById(R.id.title);
         oneTextView.setTextSize(20);
+        oneTextView.setGravity(Gravity.CENTER_VERTICAL);
         oneTextView.setText(name);
 
         ImageView imageView = listItemView.findViewById(R.id.image);

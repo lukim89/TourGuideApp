@@ -9,7 +9,7 @@ public class Place {
     private String mPhone;
     private String mDescription;
     private double mLatitude;
-    private double mlongitude;
+    private double mLongitude;
     private int mImageResourceId;
 
     public Place(String name, String description, String address, String web, String url, String phone, String latitude, String longitude,  int imageResourceId) {
@@ -20,7 +20,7 @@ public class Place {
         mURL = url;
         mPhone = phone;
         mLatitude = Double.parseDouble(latitude);
-        mlongitude = Double.parseDouble(longitude);
+        mLongitude = Double.parseDouble(longitude);
         mImageResourceId = imageResourceId;
     }
 
@@ -53,7 +53,7 @@ public class Place {
     }
 
     public double getLongitude() {
-        return mlongitude;
+        return mLongitude;
     }
 
     public int getImageResourceId() {

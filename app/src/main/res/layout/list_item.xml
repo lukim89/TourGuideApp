@@ -9,25 +9,16 @@
 
     <ImageView
         android:id="@+id/image"
+        android:scaleType="centerCrop"
         android:layout_width="88dp"
         android:layout_height="88dp" />
 
-    <LinearLayout
+    <TextView
+        android:layout_marginRight="6dp"
+        android:layout_marginLeft="6dp"
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:paddingLeft="18dp">
+        android:layout_height="match_parent"
+        tools:text="title" />
 
-        <TextView
-            android:id="@+id/title"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:text="title" />
-
-        <TextView
-            android:id="@+id/shortDescription"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-    </LinearLayout>
 </LinearLayout>
