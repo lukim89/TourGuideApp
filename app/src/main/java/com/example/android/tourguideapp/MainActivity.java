@@ -21,7 +21,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ListView mDrawerList;
-    private ArrayAdapter<String> mAdapter;
     private ActionBarDrawerToggle mDrawerToggle;
     private DrawerLayout mDrawerLayout;
     private String mTitle;
@@ -32,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mTitle = getTitle().toString();
-        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerLayout = findViewById(R.id.drawer_layout);
         mDrawerLayout.requestLayout();
-        mDrawerList = (ListView) findViewById(R.id.navList);
+        mDrawerList = findViewById(R.id.navList);
         mDrawerList.bringToFront();
 
         addDrawerItems();
@@ -51,15 +50,14 @@ public class MainActivity extends AppCompatActivity {
 
     private void addDrawerItems() {
         final ArrayList list = new ArrayList();
-        list.add("Main");
-        list.add("Tourist Information");
-        list.add("Transportation");
-        list.add("Emergency");
+        list.add(getString(R.string.main_menu));
+        list.add(getString(R.string.tourist_information_menu));
+        list.add(getString(R.string.transportation_menu));
+        list.add(getString(R.string.emergency_menu));
         final LinearLayout fragmentContainer = findViewById(R.id.secondaryList);
         fragmentContainer.setVisibility(View.GONE);
-        mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
+        ArrayAdapter<String> mAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         mDrawerList.setAdapter(mAdapter);
-
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -70,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
                     fragmentContainer.setVisibility(View.GONE);
                     mTitle = getTitle().toString();
                     getSupportActionBar().setTitle(mTitle);
+
                 } else if (position == 1) {
                     FragmentTouristInformation fragment = new FragmentTouristInformation();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -78,8 +77,9 @@ public class MainActivity extends AppCompatActivity {
                     transaction.commit();
                     LinearLayout mainList = findViewById(R.id.mainList);
                     mainList.setVisibility(View.INVISIBLE);
-                    mTitle = "Tourist Information";
+                    mTitle = getString(R.string.tourist_information_menu);
                     getSupportActionBar().setTitle(mTitle);
+
                 } else if (position == 2) {
                     FragmentTransportation fragment = new FragmentTransportation();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -88,8 +88,9 @@ public class MainActivity extends AppCompatActivity {
                     transaction.commit();
                     LinearLayout mainList = findViewById(R.id.mainList);
                     mainList.setVisibility(View.INVISIBLE);
-                    mTitle = "Transportation";
+                    mTitle = getString(R.string.transportation_menu);
                     getSupportActionBar().setTitle(mTitle);
+
                 } else {
                     FragmentEmergency fragment = new FragmentEmergency();
                     FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -98,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
                     transaction.commit();
                     LinearLayout mainList = findViewById(R.id.mainList);
                     mainList.setVisibility(View.INVISIBLE);
-                    mTitle = "Emergency";
+                    mTitle = getString(R.string.emergency_menu);
                     getSupportActionBar().setTitle(mTitle);
                 }
 
@@ -111,20 +112,17 @@ public class MainActivity extends AppCompatActivity {
         mDrawerToggle = new ActionBarDrawerToggle(this, mDrawerLayout,
                 R.string.drawer_open, R.string.drawer_close) {
 
-            /** Called when a drawer has settled in a completely open state. */
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
-                getSupportActionBar().setTitle("Navigation!");
+                getSupportActionBar().setTitle(R.string.navigation);
                 invalidateOptionsMenu();
             }
 
-            /** Called when a drawer has settled in a completely closed state. */
             public void onDrawerClosed(View view) {
                 super.onDrawerClosed(view);
                 getSupportActionBar().setTitle(mTitle);
                 invalidateOptionsMenu();
             }
-
         };
 
         mDrawerToggle.setDrawerIndicatorEnabled(true);
@@ -133,12 +131,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-        if (mDrawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        return mDrawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
     }
 
     @Override

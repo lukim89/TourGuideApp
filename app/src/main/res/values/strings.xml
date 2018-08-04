@@ -4,12 +4,16 @@
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
 
-    <string name="TouristAttractions">Tourist Attractions</string>
-    <string name="Gastronomy">Gastronomy</string>
-    <string name="Hotels">Hotels</string>
-    <string name="Four">four</string>
-    <string name="Details">details</string>
-    <string name="Map">map</string>
+    <string name="main_menu">Main</string>
+    <string name="tourist_information_menu">Tourist Information</string>
+    <string name="transportation_menu">Transportation</string>
+    <string name="emergency_menu">Emergency</string>
+
+    <string name="tourist_attractions">Tourist Attractions</string>
+    <string name="gastronomy">Gastronomy</string>
+    <string name="hotels">Hotels</string>
+    <string name="Description">Description</string>
+    <string name="map">Map</string>
 
     <string name="sulkowski_castle">Sulkowski Dukes’ Castle</string>
     <string name="sulkowski_castle_address">Wzgórze 16, 43–300 Bielsko–Biała</string>
@@ -77,8 +81,8 @@
     <string name="szyndzielnia_url">http://www.szyndzielnia.ziad.bielsko.pl/index.php/</string>
     <string name="szyndzielnia_phone">+48 33 814 44 81</string>
     <string name="szyndzielnia_description">Szyndzielnia is a popular peak with a height of 1028 m above sea level in the Silesian Beskids. It lies in the massif of Klimczok, and also within the administrative boundaries of Bielsko-Biala. The Szyndzielnia area is covered with mixed forests with a predominance of beech and a mixture of fir and spruce trees. Because of its proximity to the large urban center, and of large mountain hostel as well as of an easy access to the cable car, Szyndzielnia is one of the most frequently visited Beskids mountains.</string>
-    <string name="szyndzielnia_latitude">49.775746</string>
-    <string name="szyndzielnia_longitude">19.010565</string>
+    <string name="szyndzielnia_latitude">49.755353</string>
+    <string name="szyndzielnia_longitude">19.002759</string>
 
     <string name="zar">Żar</string>
     <string name="zar_address">Górska 23, 34-315 Międzybrodzie Żywieckie</string>
@@ -86,17 +90,17 @@
     <string name="zar_url">http://www.pkl.pl/gora-zar/gora-zar-en.html</string>
     <string name="zar_phone">+48 22 444 66 66</string>
     <string name="zar_description">Mount Żar is a popular tourist destination. It is located in the Little Beskid. The peak rises to 761 m. above sea leve over steep, wooded slopes dominating over Międzybrockie Lake. On the artificially flattened top there is a water reservoir, which is part of the pumped-storage hydroelectricity, which was put to use in 1979. The reservoir is 650 meters long and 250 meters long, with the maximum depth of 28 meters. Its volume is 2 310 000 cubic meters. </string>
-    <string name="zar_latitude">49.775428</string>
-    <string name="zar_longitude">19.221956</string>
+    <string name="zar_latitude">49.787011</string>
+    <string name="zar_longitude">19.224919</string>
 
     <string name="skrzyczne">Skrzyczne</string>
     <string name="skrzyczne_address">Myśliwska 45, 43-370 Szczyrk</string>
-    <string name="skrzyczne_web">www.skrzyczne.cos.pl/</string>
-    <string name="skrzyczne_url">http://www.skrzyczne.cos.pl/en</string>
+    <string name="skrzyczne_web">www.skrzyczne.cos.pl</string>
+    <string name="skrzyczne_url">http://www.skrzyczne.cos.pl/en/</string>
     <string name="skrzyczne_phone">+48 33 817 86 20</string>
     <string name="skrzyczne_description">Skrzyczne Is the highest peak in the Silesian Beskids, rising to a right of 1257 m above sea level. Its characteristic shape forms the north-eastern end of the high mountain ridge that stretches from the area of Barania Góra. Skrzyczne dominates the surrounding valleys and the nearby Żywiec Valley, towering over it by more than 800 meters. A mountain hostel, a chair lift and marked ski runs make Skrzyczne one of the most popular Polish mountains.</string>
-    <string name="skrzyczne_latitude">49.707439</string>
-    <string name="skrzyczne_longitude">19.012772</string>
+    <string name="skrzyczne_latitude">49.684484</string>
+    <string name="skrzyczne_longitude">19.030139</string>
 
     <string name="zywiec_brewery">Żywiec Brewery</string>
     <string name="zywiec_brewery_address">Browarna 88, 34-300 Żywiec</string>
@@ -184,7 +188,7 @@
     <string name="karczma_straconka_address">Gorska 111, Bielsko-Biała 43-318</string>
     <string name="karczma_straconka_web">www.karczma.bielsko.pl</string>
     <string name="karczma_straconka_url">http://www.karczma.bielsko.pl/</string>
-    <string name="karczma_straconka_phone">+33 821 58 28</string>
+    <string name="karczma_straconka_phone">+48 33 821 58 28</string>
     <string name="karczma_straconka_description">Traditional Polish hunter’s cuisine in a traditional Polish inn.</string>
     <string name="karczma_straconka_latitude">49.798914</string>
     <string name="karczma_straconka_longitude">19.092086</string>
@@ -200,7 +204,7 @@
 
     <string name="qubus">Qubus Hotel Bielsko-Biala</string>
     <string name="qubus_address">ul. Mostowa 2, Bielsko-Biała 43-300</string>
-    <string name="qubus_web">https://www.qubushotel.com</string>
+    <string name="qubus_web">www.qubushotel.com</string>
     <string name="qubus_url">https://www.qubushotel.com/en/hotels/bielsko-biala/3/</string>
     <string name="qubus_phone">+48 71 78287 65</string>
     <string name="qubus_description">Qubus Hotel Bielsko-Biała is a luxury, superbly located hotel offering sumptuously equipped rooms with LCD screens, satellite television, free internet access and an extensive package of additional services. This modern hotel is located in the very centre of Bielsko-Biała, in a commercial and retail complex. As a result, guests are able to take advantage of a multiplex, a shopping mall, banks, currency exchange bureaus, cafes and clubs. The hotel hosts the Lobby Bar and an elegant restaurant at which dishes drawn from European cuisine are served, along with dishes created according to Polish recipes. We also offer seasonal dishes, these prepared in collaboration with the Head Chefs of all hotels of the chain.</string>
@@ -251,4 +255,82 @@
     <string name="beskidzka_description">Pensjonat Karczma Beskidzka is located in a quiet area, only 500 metres from the Little Beskids Landscape Park. It offers spacious, bright rooms with free Wi-Fi and private bathrooms.Each room at Przy Karczmie includes satellite TV and wooden furniture. The guest house includes a spacious, furnished terrace with a view of the forest.Breakfast is served in the Karczma Beskidzka restaurant, decorated in highlanders’ style. Guests can enjoy regional cuisine, while seating at traditional wooden tables with candlelight.Pensjonat Przy Karczmie is situated a 6-minute drive from the centre of Bielsko-Biala and features free private parking. Bielsko-Biala Main Train Station is 6.8 Km away.</string>
     <string name="beskidzka_latitude">49.781221</string>
     <string name="beskidzka_longitude">19.080012</string>
+
+    <string name="mcit">Tourist Information Centre in Bielsko-Biała.</string>
+    <string name="mcit_address">Plac Ratuszowy 4, 43-300 Bielsko Biała</string>
+    <string name="mcit_web">www.it.bielsko.pl</string>
+    <string name="mcit_url">http://mcit.bbosir.bielsko.pl/home-page/</string>
+    <string name="mcit_phone">+48 33 819 00 50</string>
+    <string name="mcit_description">In our office, customers are provided with free access to free information leaflets and booklets, in the free zone including also our gallery. Gadgets, illustrated books, postcards and maps are in the paid zone, in our main room. Main rooms are specious enough to house groups of tourist consisting even of 40 people. In the main room, with four computerized customer=service stations, visitors may have some rest and look through our promotional materials, local papers or use free wi-fi. Or, they can rent an audio-guide. Staff of Tourist Information Municipal Centre have at their disposal a storage room, a staff room, and a private toilet.</string>
+    <string name="mcit_latitude">49.822149</string>
+    <string name="mcit_longitude">19.051125</string>
+
+    <string name="silesia">Tourist portal of the Silesian.</string>
+    <string name="silesia_address">Mickiewicza 29, 40-085 Katowice</string>
+    <string name="silesia_web">www.slaskie.travel</string>
+    <string name="silesia_url">https://www.slaskie.travel/en-US</string>
+    <string name="silesia_phone">+48 32 207 207 1</string>
+    <string name="silesia_description">Silesian. Positive energy. Tourist portal of the Silesian Voivodeship.</string>
+    <string name="silesia_latitude">49.822149</string>
+    <string name="silesia_longitude">19.051125</string>
+
+    <string name="sitbb">Tourist Information System.</string>
+    <string name="sitbb_address">Piastowska 40, 43-300 Bielsko-Biała</string>
+    <string name="sitbb_web">www.sitbb.pl</string>
+    <string name="sitbb_url">http://sitbb.pl/</string>
+    <string name="sitbb_phone">+48 33 819 00 50</string>
+    <string name="sitbb_description">Tourist Information System of Bielsko-Biała and the Bielsko Poviat.</string>
+    <string name="sitbb_latitude">49.826389</string>
+    <string name="sitbb_longitude">19.031134</string>
+
+
+    <string name="mzk">City Bus Service MZK</string>
+    <string name="mzk_address">Długa 50, 43-309 Bielsko-Biała</string>
+    <string name="mzk_web">www.mzk.bielsko.pl</string>
+    <string name="mzk_url">http://www.mzk.bielsko.pl/</string>
+    <string name="mzk_phone">+48 33 814 35 11</string>
+    <string name="mzk_description">Miejski Zakład Komunikacyjny</string>
+    <string name="mzk_latitude">49.819771</string>
+    <string name="mzk_longitude">19.044792</string>
+
+    <string name="pks">Intercity Bus Service PKS</string>
+    <string name="pks_address">Warszawska 7, 43-300 Bielsko-Biała</string>
+    <string name="pks_web">www.pks.bielsko.pl</string>
+    <string name="pks_url">http://www.pks-bielsko.pl/news.php</string>
+    <string name="pks_phone">+48 33 829 53 10</string>
+    <string name="pks_description">PKS Przedsiębiorstwo Komunikacji Samochodowej S.A.</string>
+    <string name="pks_latitude">49.830726</string>
+    <string name="pks_longitude">19.043148</string>
+
+    <string name="pkp">Train service PKP</string>
+    <string name="pkp_address">Warszawska 2, 43-300 Bielsko-Biała</string>
+    <string name="pkp_web">www.pkp.pl</string>
+    <string name="pkp_url">http://www.pkp.pl/en/</string>
+    <string name="pkp_phone">703 20 20 20</string>
+    <string name="pkp_description">Polskie Koleje Państwowe SA.</string>
+    <string name="pkp_latitude">49.829826</string>
+    <string name="pkp_longitude">19.044760</string>
+
+    <string name="emergency">Emergency</string>
+    <string name="emergency_phone">112</string>
+
+    <string name="ambulance">Ambulance</string>
+    <string name="ambulance_phone">999</string>
+
+    <string name="police">Police</string>
+    <string name="police_phone">997</string>
+
+    <string name="municipal_police">Municipal police</string>
+    <string name="municipal_police_phone">986</string>
+
+    <string name="mountain_rescue">Mountain rescue</string>
+    <string name="mountain_rescue_phone">985</string>
+
+    <string name="mountain_rescue2">Mountain rescue 2</string>
+    <string name="mountain_rescue_phone2">+48 601 100 300</string>
+
+    <string name="road_help">Road help</string>
+    <string name="road_help_phone">981</string>
+    <string name="navigation">Navigation!</string>
+
 </resources>

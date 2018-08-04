@@ -1,6 +1,5 @@
 package com.example.android.tourguideapp;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -14,19 +13,13 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class FragmentDetailsMap extends Fragment implements OnMapReadyCallback {
-
 
     private double longitude;
     private double latitude;
 
     public FragmentDetailsMap() {
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,13 +38,12 @@ public class FragmentDetailsMap extends Fragment implements OnMapReadyCallback {
         return rootView;
     }
 
-
     @Override
-    public void onMapReady (GoogleMap googleMap) {
+    public void onMapReady(GoogleMap googleMap) {
 
         LatLng mPlace = new LatLng(latitude, longitude);
 
         googleMap.addMarker(new MarkerOptions().position(mPlace));
-        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mPlace,15.0f));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(mPlace, 15.0f));
     }
 }

@@ -10,7 +10,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     private Context mContext;
     private int mType;
 
-    public CategoryAdapter(Context context, FragmentManager fragmentManager, int type) {
+    CategoryAdapter(Context context, FragmentManager fragmentManager, int type) {
         super(fragmentManager);
         mContext = context;
         mType = type;
@@ -46,17 +46,17 @@ public class CategoryAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         if (mType == 1) {
             if (position == 0) {
-                return mContext.getString(R.string.TouristAttractions);
+                return mContext.getString(R.string.tourist_attractions);
             } else if (position == 1) {
-                return mContext.getString(R.string.Gastronomy);
+                return mContext.getString(R.string.gastronomy);
             } else {
-                return mContext.getString(R.string.Hotels);
+                return mContext.getString(R.string.hotels);
             }
         } else {
             if (position == 0) {
-                return mContext.getString(R.string.Details);
+                return mContext.getString(R.string.Description);
             } else {
-                return mContext.getString(R.string.Map);
+                return mContext.getString(R.string.map);
             }
         }
     }

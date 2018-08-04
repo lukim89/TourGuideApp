@@ -12,7 +12,7 @@ public class Place {
     private double mLongitude;
     private int mImageResourceId;
 
-    public Place(String name, String description, String address, String web, String url, String phone, String latitude, String longitude,  int imageResourceId) {
+    Place(String name, String description, String address, String web, String url, String phone, String latitude, String longitude, int imageResourceId) {
         mName = name;
         mDescription = description;
         mAddress = address;

@@ -14,7 +14,6 @@ public class FragmentTouristAttractions extends Fragment {
     public FragmentTouristAttractions() {
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -29,11 +28,10 @@ public class FragmentTouristAttractions extends Fragment {
         place.add(new Place(getString(R.string.sfr), getString(R.string.sfr_description), getString(R.string.sfr_address), getString(R.string.sfr_web), getString(R.string.sfr_url), getString(R.string.sfr_phone), getString(R.string.sfr_latitude), getString(R.string.sfr_longitude), R.drawable.sfr));
         place.add(new Place(getString(R.string.szyndzielnia), getString(R.string.szyndzielnia_description), getString(R.string.szyndzielnia_address), getString(R.string.szyndzielnia_web), getString(R.string.szyndzielnia_url), getString(R.string.szyndzielnia_phone), getString(R.string.szyndzielnia_latitude), getString(R.string.szyndzielnia_longitude), R.drawable.szyndzielnia));
         place.add(new Place(getString(R.string.zar), getString(R.string.zar_description), getString(R.string.zar_address), getString(R.string.zar_web), getString(R.string.zar_url), getString(R.string.zar_phone), getString(R.string.zar_latitude), getString(R.string.zar_longitude), R.drawable.zar));
-        place.add(new Place(getString(R.string.skrzyczne), getString(R.string.skrzyczne_description), getString(R.string.skrzyczne_address), getString(R.string.skrzyczne_web), getString(R.string.skrzyczne_web), getString(R.string.skrzyczne_phone), getString(R.string.skrzyczne_latitude), getString(R.string.skrzyczne_longitude), R.drawable.skrzyczne));
+        place.add(new Place(getString(R.string.skrzyczne), getString(R.string.skrzyczne_description), getString(R.string.skrzyczne_address), getString(R.string.skrzyczne_web), getString(R.string.skrzyczne_url), getString(R.string.skrzyczne_phone), getString(R.string.skrzyczne_latitude), getString(R.string.skrzyczne_longitude), R.drawable.skrzyczne));
         place.add(new Place(getString(R.string.zywiec_brewery), getString(R.string.zywiec_brewery_description), getString(R.string.zywiec_brewery_address), getString(R.string.zywiec_brewery_web), getString(R.string.zywiec_brewery_url), getString(R.string.zywiec_brewery_phone), getString(R.string.zywiec_brewery_latitude), getString(R.string.zywiec_brewery_longitude), R.drawable.zywiec_brewery));
         place.add(new Place(getString(R.string.zamek_pszczyna), getString(R.string.zamek_pszczyna_description), getString(R.string.zamek_pszczyna_address), getString(R.string.zamek_pszczyna_web), getString(R.string.zamek_pszczyna_url), getString(R.string.zamek_pszczyna_phone), getString(R.string.zamek_pszczyna_latitude), getString(R.string.zamek_pszczyna_longitude), R.drawable.zamek_pszczyna));
         place.add(new Place(getString(R.string.teatr_poski), getString(R.string.teatr_poski_description), getString(R.string.teatr_poski_address), getString(R.string.teatr_poski_web), getString(R.string.teatr_poski_url), getString(R.string.teatr_poski_phone), getString(R.string.teatr_poski_latitude), getString(R.string.teatr_poski_longitude), R.drawable.teatr_poski));
-
 
         PlaceAdapter adapter = new PlaceAdapter(getActivity(), place);
 
